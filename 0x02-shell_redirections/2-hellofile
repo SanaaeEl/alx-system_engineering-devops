@@ -1,2 +1,2 @@
 #!/bin/badh
-cat fmt /etc/passwd
+cat /etc/passwd
