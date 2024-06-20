@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -iname '*.gif' -exec stat -c "%s %n" {} + | sort -k1,1n -k2,2 | rev | cut -d'/' -f1 | rev | sed 's/\.gif$//' | tr '[:upper:]' '[:lower:]'
