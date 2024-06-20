@@ -1,2 +1,2 @@
 #!/bin/bash
-du --empty --all | cut -f2
+du --null --all | cut -f2
