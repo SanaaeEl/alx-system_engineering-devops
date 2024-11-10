@@ -3,5 +3,5 @@
 
 for name in [$(ls)];
 do
-	echo "${name#*-}"
+	echo "$name" | cut -d '-' -f2
 done
